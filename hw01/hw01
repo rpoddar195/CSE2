@@ -1,0 +1,11 @@
+//Ritika Poddar
+//Welcome Class Java Program
+
+
+//define class
+public class WelcomeClass{
+
+//add main method
+    public static void main(String[] args){
+    
+
