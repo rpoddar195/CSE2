@@ -63,13 +63,34 @@ totalSalesTax$=totalTaxSocks$+totalTaxGlass$+totalTaxEnvelope$;
 totalPaid$=totalCostofPurchase$+totalSalesTax$;
 //Total paid for entire purchase at Walmart.
 
+//Now converting the variables from double to int to double to get rid of extra #'s after decimal
+int totalTaxSocks2$=(int)((totalTaxSocks$*100));
+double totalTaxSocks3$=totalTaxSocks2$;
+
+
+int totalTaxGlass2$=(int)((totalTaxGlass$*100));
+double totalTaxGlass3$=totalTaxGlass2$;
+
+
+int totalTaxEnvelope2$=(int)((totalTaxEnvelope$*100));
+double totalTaxEnvelope3$=totalTaxEnvelope2$;
+
+
+int totalSalesTax2$=(int)((totalSalesTax$*100));
+double totalSalesTax3$=totalSalesTax2$;
+
+
+int totalPaid2$=(int)((totalPaid$*100));
+double totalPaid3$=totalPaid2$;
+
+
 System.out.println("The total cost for the socks was " +(totalSockCost$)+ " dollars, for glass it was "+ (totalGlassCost$)+ 
 " dollars, and for enevelopes it was " + (totalEnvelopeCost$)+ " dollars.");
-System.out.println("The total sales tax for the socks was " +(totalTaxSocks$)+ " dollars, for glass it was "+ (totalTaxGlass$)+ 
-" dollars, and for enevelopes it was " + (totalTaxEnvelope$)+ " dollars.");
+System.out.println("The total sales tax for the socks was " +((totalTaxSocks3$)/100)+ " dollars, for glass it was "+ ((totalTaxGlass3$)/100)+ 
+" dollars, and for enevelopes it was " + ((totalTaxEnvelope3$)/100)+ " dollars.");
 System.out.println("The total cost of the purchase before tax was " + (totalCostofPurchase$) + 
-" dollars and the total sales tax paid was "+ (totalSalesTax$)+ " dollars.");
-System.out.println("The total amount paid for the whole transaction at Walmart was " + (totalPaid$)+ " dollars.");
+" dollars and the total sales tax paid was "+ ((totalSalesTax3$)/100)+ " dollars.");
+System.out.println("The total amount paid for the whole transaction at Walmart was " + ((totalPaid3$)/100)+ " dollars.");
 
 
 
