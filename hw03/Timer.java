@@ -34,16 +34,16 @@ public static void main(String[] ars) {
     int hours, minutes, dinnermin, dinnerhours;
     int currentmin, currenthours, timeleftmin, timelefthours ;
     
-    dinnermin=(dinnerTime%100);
-    currentmin=(currentTime%100);
+    dinnermin=(dinnerTime%100);  //minutes value from the dinner time
+    currentmin=(currentTime%100);  //minutes value from the current time
     
-    dinnerhours=(dinnerTime/100);
-    currenthours=(currentTime/100);
+    dinnerhours=(dinnerTime/100);  //hours value from dinner time
+    currenthours=(currentTime/100); //hours value from the current time
     
-    timeleftmin=dinnermin-currentmin;
-    timelefthours=dinnerhours-currenthours;
+    timeleftmin=dinnermin-currentmin;  //minutes left
+    timelefthours=dinnerhours-currenthours;  //hours left
     
-    if(currentmin>dinnermin)
+    if(currentmin>dinnermin)   //if the current time's minute value is left the dinner time's minute value, this will adjust it.
     {minutes=timeleftmin+60;
     hours=timelefthours-1;}
     else {minutes=timeleftmin;
