@@ -31,12 +31,24 @@ public static void main(String[] ars) {
     //accept user input
     
     //Output
-    int hours, minutes;
-    int timeLeft;
+    int hours, minutes, dinnermin, dinnerhours;
+    int currentmin, currenthours, timeleftmin, timelefthours ;
     
-    timeLeft=dinnerTime-currentTime;
-    hours=(timeLeft/100);
-    minutes=(timeLeft%100);
+    dinnermin=(dinnerTime%100);
+    currentmin=(currentTime%100);
+    
+    dinnerhours=(dinnerTime/100);
+    currenthours=(currentTime/100);
+    
+    timeleftmin=dinnermin-currentmin;
+    timelefthours=dinnerhours-currenthours;
+    
+    if(currentmin>dinnermin)
+    {minutes=timeleftmin+60;
+    hours=timelefthours-1;}
+    else {minutes=timeleftmin;
+          hours=timelefthours;}
+    
     
     
     System.out.println("You have "+ hours + " hours and " + minutes + " minutes left until dinner.");
