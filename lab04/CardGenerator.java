@@ -32,7 +32,7 @@ public class CardGenerator{
      
      //Switch for indentity of card
      
-     switch (Cardnumber%12){
+     switch (Cardnumber%13){
         case 0:
         Cardidentity="Ace";
         break;
