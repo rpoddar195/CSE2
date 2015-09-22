@@ -1,0 +1,57 @@
+ System.out.println("Your random cards are: ");
+     System.out.println("The " + Cardidentity + " of " + Suit + ".");
+     System.out.println("The " + Cardidentity2 + " of " + Suit2 + ".");
+     System.out.println("The " + Cardidentity3 + " of " + Suit3 + ".");
+     System.out.println("The " + Cardidentity4 + " of " + Suit4 + ".");
+     System.out.println("The " + Cardidentity5 + " of " + Suit5 + ".");
+     
+     
+     
+      //to find a pair
+   if(FirstCard.equals(SecondCard)){
+       System.out.println("You have a pair!");
+   } else if(FirstCard.equals(ThirdCard)){
+       System.out.println("You have a pair!");
+   } else if(FirstCard.equals(FourthCard)){
+     System.out.println("You have a pair!");
+   } else if(FirstCard.equals(FifthCard)){
+     System.out.println("You have a pair!");
+   } else if(SecondCard.equals(ThirdCard)){
+     System.out.println("You have a pair!");
+   } else if(SecondCard.equals(FourthCard)){
+     System.out.println("You have a pair!");
+   } else if(SecondCard.equals(FifthCard)){
+     System.out.println("You have a pair!");
+   }else if(ThirdCard.equals(FourthCard)){
+     System.out.println("You have a pair!");
+   }else if(ThirdCard.equals(FifthCard)){
+     System.out.println("You have a pair!");
+   }else if(FourthCard.equals(FifthCard)){
+     System.out.println("You have a pair!");
+   }
+   
+   
+   //to find three of same.
+   if(FirstCard.equals(SecondCard) && FirstCard.equals(ThirdCard)){
+        System.out.println("You have a three of the same!");
+    } else if(FirstCard.equals(SecondCard) && FirstCard.equals(FourthCard)){
+        System.out.println("You have a three of the same!");
+    } else if(FirstCard.equals(SecondCard) && FirstCard.equals(FifthCard)) {
+        System.out.println("You have a three of the same!");
+    } else if(FirstCard.equals(ThirdCard) && FirstCard.equals(FourthCard)) {
+        System.out.println("You have a three of the same!");
+    } else if(FirstCard.equals(ThirdCard) && FirstCard.equals(FifthCard)) {
+        System.out.println("You have a three of the same!");
+    } else if(FirstCard.equal(FourthCard) && FirstCard.equals(FifthCard)) {
+        System.out.println("You have a three of the same!");
+    } else if(SecondCard.equals(ThirdCard) && SecondCard.equals(FourthCard)) {
+        System.out.println("You have a three of the same!");
+    } else if(SecondCard.equals(ThirdCard) && SecondCard.equals(FifthCard)) {
+        System.out.println("You have a three of the same!");
+    } else if(SecondCard.equals(FourthCard) && SecondCard.equals(FifthCard)) {
+        System.out.println("You have a three of the same!");
+    } else if(ThirdCard.equals(FourthCard)  && ThirdCard.equals(FifthCard)) {
+        System.out.println("You have a three of the same!");
+    } 
+   
+   
