@@ -11,12 +11,12 @@ public class PokerHandCheck{
     int min, max;
     min=1;
     max=52;
-    int Cardnumber= (int)(Math.random()*(max+1))+min;
+    int Cardnumber= (int)(Math.random()*(max+1))+min; //random number with lower limit 1 and upper limit 52
     
-    String Suit="";
-    String Cardidentity="";
+    String Suit=""; //variable for card suit
+    String Cardidentity=""; //variable for card value
     
-    //if statements to assign suit name
+    //if statements to assign suits to the cards by having ranges of 13
     if(Cardnumber>= 1 && Cardnumber <=13){
         Suit="Diamonds";
      }
