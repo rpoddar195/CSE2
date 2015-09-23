@@ -395,6 +395,11 @@ public class PokerHandCheck{
      System.out.println("The " + Cardidentity4 + " of " + Suit4 + ".");
      System.out.println("The " + Cardidentity5 + " of " + Suit5 + ".");
   
+ // boolean presenceofPair=false
+ // boolean presenceofTriple=false
+ // boolean presenceofTwoPair=false
+  
+  
    //To find two pairs, if else statements running through each combination fo two pairs. 
    if(Cardidentity.equals(Cardidentity2) && Cardidentity3.equals(Cardidentity4)){
        System.out.println("You have a two pair!");
