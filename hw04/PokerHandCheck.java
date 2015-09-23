@@ -395,53 +395,6 @@ public class PokerHandCheck{
      System.out.println("The " + Cardidentity4 + " of " + Suit4 + ".");
      System.out.println("The " + Cardidentity5 + " of " + Suit5 + ".");
   
-    //to find a pair, if else statments for every combination of a pair.
-   if(Cardidentity.equals(Cardidentity2)){
-       System.out.println("You have a pair!");
-   } else if(Cardidentity.equals(Cardidentity3)){
-       System.out.println("You have a pair!");
-   } else if(Cardidentity.equals(Cardidentity4)){
-     System.out.println("You have a pair!");
-   } else if(Cardidentity.equals(Cardidentity5)){
-     System.out.println("You have a pair!");
-   } else if(Cardidentity2.equals(Cardidentity3)){
-     System.out.println("You have a pair!");
-   } else if(Cardidentity2.equals(Cardidentity4)){
-     System.out.println("You have a pair!");
-   } else if(Cardidentity2.equals(Cardidentity5)){
-     System.out.println("You have a pair!");
-   }else if(Cardidentity3.equals(Cardidentity4)){
-     System.out.println("You have a pair!");
-   }else if(Cardidentity3.equals(Cardidentity5)){
-     System.out.println("You have a pair!");
-   }else if(Cardidentity4.equals(Cardidentity5)){
-     System.out.println("You have a pair!");
-   }
-   
-   
-   //to find three of same, if else statments for every combination of three of the same.
-   if(Cardidentity.equals(Cardidentity2) && Cardidentity.equals(Cardidentity3)){
-        System.out.println("You have a three of the same!");
-    } else if(Cardidentity.equals(Cardidentity2) && Cardidentity.equals(Cardidentity4 )){
-        System.out.println("You have a three of the same!");
-    } else if(Cardidentity.equals(Cardidentity2) && Cardidentity.equals(Cardidentity5)) {
-        System.out.println("You have a three of the same!");
-    } else if(Cardidentity.equals(Cardidentity3) && Cardidentity.equals(Cardidentity4 )) {
-        System.out.println("You have a three of the same!");
-    } else if(Cardidentity.equals(Cardidentity3) && Cardidentity.equals(Cardidentity5)){
-        System.out.println("You have a three of the same!");
-    } else if(Cardidentity.equals(Cardidentity4) && Cardidentity.equals(Cardidentity5)) {
-        System.out.println("You have a three of the same!");
-    } else if(Cardidentity2.equals(Cardidentity3) && Cardidentity2.equals(Cardidentity4 )) {
-        System.out.println("You have a three of the same!");
-    } else if(Cardidentity2.equals(Cardidentity3) && Cardidentity2.equals(Cardidentity5)) {
-        System.out.println("You have a three of the same!");
-    } else if(Cardidentity2.equals(Cardidentity4) && Cardidentity2.equals(Cardidentity5)) {
-        System.out.println("You have a three of the same!");
-    } else if(Cardidentity3.equals(Cardidentity4)  && Cardidentity3.equals(Cardidentity5)) {
-        System.out.println("You have a three of the same!");
-    } 
-   
    //To find two pairs, if else statements running through each combination fo two pairs. 
    if(Cardidentity.equals(Cardidentity2) && Cardidentity3.equals(Cardidentity4)){
        System.out.println("You have a two pair!");
@@ -503,8 +456,56 @@ public class PokerHandCheck{
       System.out.println("You have a two pair!");
    }else if(Cardidentity4.equals(Cardidentity5) && Cardidentity.equals(Cardidentity3)){
       System.out.println("You have a two pair!");
- 
-   }else {System.out.print("You have a high card hand!");}
+   }
+     
+   //to find three of same, if else statments for every combination of three of the same.
+   if(Cardidentity.equals(Cardidentity2) && Cardidentity.equals(Cardidentity3)){
+        System.out.println("You have a three of the same!");
+    } else if(Cardidentity.equals(Cardidentity2) && Cardidentity.equals(Cardidentity4 )){
+        System.out.println("You have a three of the same!");
+    } else if(Cardidentity.equals(Cardidentity2) && Cardidentity.equals(Cardidentity5)) {
+        System.out.println("You have a three of the same!");
+    } else if(Cardidentity.equals(Cardidentity3) && Cardidentity.equals(Cardidentity4 )) {
+        System.out.println("You have a three of the same!");
+    } else if(Cardidentity.equals(Cardidentity3) && Cardidentity.equals(Cardidentity5)){
+        System.out.println("You have a three of the same!");
+    } else if(Cardidentity.equals(Cardidentity4) && Cardidentity.equals(Cardidentity5)) {
+        System.out.println("You have a three of the same!");
+    } else if(Cardidentity2.equals(Cardidentity3) && Cardidentity2.equals(Cardidentity4 )) {
+        System.out.println("You have a three of the same!");
+    } else if(Cardidentity2.equals(Cardidentity3) && Cardidentity2.equals(Cardidentity5)) {
+        System.out.println("You have a three of the same!");
+    } else if(Cardidentity2.equals(Cardidentity4) && Cardidentity2.equals(Cardidentity5)) {
+        System.out.println("You have a three of the same!");
+    } else if(Cardidentity3.equals(Cardidentity4)  && Cardidentity3.equals(Cardidentity5)) {
+        System.out.println("You have a three of the same!");
+    } 
+   
+      
+    //to find a pair, if else statments for every combination of a pair.
+   if(Cardidentity.equals(Cardidentity2)){
+       System.out.println("You have a pair!");
+   } else if(Cardidentity.equals(Cardidentity3)){
+       System.out.println("You have a pair!");
+   } else if(Cardidentity.equals(Cardidentity4)){
+     System.out.println("You have a pair!");
+   } else if(Cardidentity.equals(Cardidentity5)){
+     System.out.println("You have a pair!");
+   } else if(Cardidentity2.equals(Cardidentity3)){
+     System.out.println("You have a pair!");
+   } else if(Cardidentity2.equals(Cardidentity4)){
+     System.out.println("You have a pair!");
+   } else if(Cardidentity2.equals(Cardidentity5)){
+     System.out.println("You have a pair!");
+   }else if(Cardidentity3.equals(Cardidentity4)){
+     System.out.println("You have a pair!");
+   }else if(Cardidentity3.equals(Cardidentity5)){
+     System.out.println("You have a pair!");
+   }else if(Cardidentity4.equals(Cardidentity5)){
+     System.out.println("You have a pair!");
+   }else {System.out.print("You have a high card hand!");
+       
+   }
   
   
   
@@ -536,4 +537,5 @@ public class PokerHandCheck{
         
     }
     
-  }
+  
+    }
