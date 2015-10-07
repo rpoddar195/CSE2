@@ -30,7 +30,7 @@ public class BarGraph{
       //Input for Monday and loop to error check input
        
          boolean inputValid = false;
-        while(!inputValid){
+         while(!inputValid){
             System.out.print("Enter expenses for Monday: $");
             
             if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
@@ -38,8 +38,8 @@ public class BarGraph{
              inputValid= true;
             } else {
 	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
-	                
-	                continue;
+	                myScanner.nextLine(); 
+	               continue;
             }
         
         	if(temp>0){
@@ -47,20 +47,25 @@ public class BarGraph{
 	            	inputValid = true;
         	}else{
 	            	System.out.println("Please only enter positive digits. Try again. ");
-	            
+	                ;
         	}
-        } 
+       
+        }  
        
         
         //Input for Tuesday and loop to error check input
             boolean inputValid2= false;
            while(!inputValid2){
-            System.out.print("Enter expenses for Tuesday: $");
-            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
+                System.out.print("Enter expenses for Tuesday: $");
+           
+                 if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
             	 input2 = myScanner.nextDouble();
-             } else {
+                 inputValid2= true;
+                     
+                 } else {
 	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
-            continue;
+                    myScanner.nextLine();
+                    continue;
              }
         
         	if(input2>0){
@@ -77,10 +82,13 @@ public class BarGraph{
            boolean inputValid3 = false;
          while(!inputValid3){
             System.out.print("Enter expenses for Wednesday: $");
+            
             if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
             	 input3 = myScanner.nextDouble();
+                inputValid3=true;    
              } else {
 	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
+                myScanner.nextLine();
                 continue;
             }
         
@@ -99,10 +107,13 @@ public class BarGraph{
           boolean inputValid4 = false;
          while(!inputValid4){
             System.out.print("Enter expenses for Thursday: $");
+           
             if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
             	 input4 = myScanner.nextDouble();
+                inputValid4=true;
              } else {
 	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
+                myScanner.nextLine();
                 continue;    
                  
              }
@@ -121,11 +132,13 @@ public class BarGraph{
           boolean inputValid5 = false;
          while(!inputValid5){
             System.out.print("Enter expenses for Friday: $");
+           
             if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
                input5 = myScanner.nextDouble();
+                inputValid5= true;
              } else {
 	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
-            
+                myScanner.nextLine();
                  continue;
              }
         
@@ -146,9 +159,11 @@ public class BarGraph{
             System.out.print("Enter expenses for Saturday: $");
             if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
             	 input6 = myScanner.nextDouble();
+                inputValid6=true;
              } else {
 	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
-           continue;
+                    myScanner.nextLine();
+                     continue;
             }
         
         	if(input6>0){
@@ -166,11 +181,15 @@ public class BarGraph{
           boolean inputValid7 = false;
          while(!inputValid7){
             System.out.print("Enter expenses for Sunday: $");
+           
             if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
             	 input7 = myScanner.nextDouble();
-             } else {
+                inputValid7=true;
+                
+            } else {
 	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
-           continue;
+                    myScanner.nextLine();
+                     continue;
             }
         
         	if(input7>0){

@@ -59,43 +59,7 @@ public class CheckDigit{
         
         
         
-         
-     /*  int check;  
-               int num1=Isbn/1000000000;
-                int num2=I(sbn/100000000)%10;
-                int num3=(Isbn/10000000)%10;
-                int num4=(Isbn/1000000)%10;
-                int num5=(Isbn/100000)%10;
-                int num6=(Isbn/10000)%10;
-                int num7=(Isbn/1000)%10;
-                int num8=(Isbn/100)%10;
-                int num9=(Isbn/10)%10;
-                int num10=Isbn%10;    
-            
-           // for(int a=10, a>0, a--){
-                for(some condition for num1-10){
-                    numX/a++
-                }
-            }   
-              char num1=(Isbn.CharAt(1));
-           char num2=(Isbn.CharAt(2));
-           char num3=(Isbn.CharAt(3));
-           char num4=(Isbn.CharAt(4));
-           char num5=(Isbn.CharAt(5));
-           char num6=(Isbn.CharAt(6));
-           char num7=(Isbn.CharAt(7));
-           char num8=(Isbn.CharAt(8));
-           char num9=(Isbn.CharAt(9));
-            char numX=(Isbn.CharAt(10)); 
-             
-             
-             */  
-        
-        
-        
-        
-        
-        
+   
         
         
         
