@@ -9,8 +9,9 @@ import java.util.*;
 public class BarGraph{
     public static void main(String[] args){
         
-        Scanner myScanner = new Scanner (System.in);
+        Scanner myScanner = new Scanner (System.in); //Scanner
       
+     //Declaring and initializing the variable for inputs for each day
         double monday=0;
         double tuesday=0;
         double wednesday=0;
@@ -33,20 +34,20 @@ public class BarGraph{
          while(!inputValid){
             System.out.print("Enter expenses for Monday: $");
             
-            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
+            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){   //check to see if input is an int or double
             temp = myScanner.nextDouble();	 
-             inputValid= true;
+             inputValid= true;                                       //if it is then assign an identifier to input
             } else {
-	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
+	                System.out.println("Sorry, you did not enter an integer. Please Try again. "); //if not int or double, error message pops up
 	                myScanner.nextLine(); 
 	               continue;
             }
         
-        	if(temp>0){
+        	if(temp>0){  //check to see if input if greater than 0
 	            	monday = temp;
 	            	inputValid = true;
         	}else{
-	            	System.out.println("Please only enter positive digits. Try again. ");
+	            	System.out.println("Please only enter positive digits. Try again. ");   //if not, error message pops up
 	                ;
         	}
        
@@ -58,12 +59,12 @@ public class BarGraph{
            while(!inputValid2){
                 System.out.print("Enter expenses for Tuesday: $");
            
-                 if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
-            	 input2 = myScanner.nextDouble();
+                 if(myScanner.hasNextDouble()||myScanner.hasNextInt()){ //check to see if input is an int or double
+            	 input2 = myScanner.nextDouble();                        //if it is then assign an identifier to input
                  inputValid2= true;
                      
                  } else {
-	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
+	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");//if not int or double, error message pops up
                     myScanner.nextLine();
                     continue;
              }
@@ -72,7 +73,7 @@ public class BarGraph{
 	            	tuesday = input2;
 	            	inputValid2 = true;
         	}else{
-	            	System.out.println("Please only enter positive digits. Try again. ");
+	            	System.out.println("Please only enter positive digits. Try again. ");  //if not, error message pops up
         	}
         }
        
@@ -83,11 +84,11 @@ public class BarGraph{
          while(!inputValid3){
             System.out.print("Enter expenses for Wednesday: $");
             
-            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
-            	 input3 = myScanner.nextDouble();
+            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){  //check to see if input is an int or double
+            	 input3 = myScanner.nextDouble();                     //if it is then assign an identifier to input
                 inputValid3=true;    
              } else {
-	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
+	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");  //if not int or double, error message pops up
                 myScanner.nextLine();
                 continue;
             }
@@ -96,7 +97,7 @@ public class BarGraph{
 	            	wednesday = input3;
 	            	inputValid3 = true;
         	}else{
-	            	System.out.println("Please only enter positive digits. Try again. ");
+	            	System.out.println("Please only enter positive digits. Try again. ");  //if not, error message pops up
         	}
         }
         
@@ -108,11 +109,11 @@ public class BarGraph{
          while(!inputValid4){
             System.out.print("Enter expenses for Thursday: $");
            
-            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
-            	 input4 = myScanner.nextDouble();
+            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){   //check to see if input is an int or double
+            	 input4 = myScanner.nextDouble();                     //if it is then assign an identifier to input
                 inputValid4=true;
              } else {
-	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
+	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");  //if not int or double, error message pops up
                 myScanner.nextLine();
                 continue;    
                  
@@ -122,7 +123,7 @@ public class BarGraph{
 	            	thursday = input4;
 	            	inputValid4 = true;
         	}else{
-	            	System.out.println("Please only enter positive digits. Try again. ");
+	            	System.out.println("Please only enter positive digits. Try again. ");  //if not, error message pops up
         	}
         }
         
@@ -133,11 +134,11 @@ public class BarGraph{
          while(!inputValid5){
             System.out.print("Enter expenses for Friday: $");
            
-            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
-               input5 = myScanner.nextDouble();
+            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){  //check to see if input is an int or double
+               input5 = myScanner.nextDouble();                     //if it is then assign an identifier to input
                 inputValid5= true;
              } else {
-	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
+	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");  //if not int or double, error message pops up
                 myScanner.nextLine();
                  continue;
              }
@@ -146,7 +147,7 @@ public class BarGraph{
 	            	friday = input5;
 	            	inputValid5 = true;
         	}else{
-	            	System.out.println("Please only enter positive digits. Try again. ");
+	            	System.out.println("Please only enter positive digits. Try again. ");  //if not, error message pops up
         	}
         }
         
@@ -157,11 +158,11 @@ public class BarGraph{
            boolean inputValid6 = false;
          while(!inputValid6){
             System.out.print("Enter expenses for Saturday: $");
-            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
-            	 input6 = myScanner.nextDouble();
+            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){  //check to see if input is an int or double
+            	 input6 = myScanner.nextDouble();                   //if it is then assign an identifier to input
                 inputValid6=true;
              } else {
-	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
+	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");  //if not int or double, error message pops up
                     myScanner.nextLine();
                      continue;
             }
@@ -170,7 +171,7 @@ public class BarGraph{
 	            	saturday = input6;
 	            	inputValid6 = true;
         	}else{
-	            	System.out.println("Please only enter positive digits. Try again. ");
+	            	System.out.println("Please only enter positive digits. Try again. ");  //if not, error message pops up
         	}
         }
         
@@ -182,12 +183,12 @@ public class BarGraph{
          while(!inputValid7){
             System.out.print("Enter expenses for Sunday: $");
            
-            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){
-            	 input7 = myScanner.nextDouble();
+            if(myScanner.hasNextDouble()||myScanner.hasNextInt()){  //check to see if input is an int or double
+            	 input7 = myScanner.nextDouble();                    //if it is then assign an identifier to input
                 inputValid7=true;
                 
             } else {
-	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");
+	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");  //if not int or double, error message pops up
                     myScanner.nextLine();
                      continue;
             }
@@ -196,12 +197,12 @@ public class BarGraph{
 	            	sunday = input7;
 	            	inputValid7 = true;
         	}else{
-	            	System.out.println("Please only enter positive digits. Try again. ");
+	            	System.out.println("Please only enter positive digits. Try again. ");  //if not, error message pops up
         	}
         }
          
        
-       
+       //round the inputs so there is an accurate number of asteriks in bar graph
         int wage=(int) Math.round(monday);
         int wage2=(int) Math.round(tuesday);
         int wage3=(int) Math.round(wednesday);
@@ -225,7 +226,7 @@ public class BarGraph{
         }
         
             
-          System.out.println("");
+          System.out.println("");     //These are all for loops to print out the asteriks based on the input value for each day.
           System.out.print("Wed:");
          for(int c=0;c<wage3;c++) {
             System.out.print("*");
@@ -266,19 +267,20 @@ public class BarGraph{
             double estAverage;
             
             
-            average=(monday+tuesday+wednesday+thursday+friday+saturday+sunday)/7;
+            average=(monday+tuesday+wednesday+thursday+friday+saturday+sunday)/7;  // avergae daily
            
             int randomPercent = (int) (Math.random()*(41));
             
             if (randomPercent >=20){
-                estAverage = (average)*(100+randomPercent-20)*0.01;
+                estAverage = (average)*(100+randomPercent-20)*0.01;  //random percentege if random number>20
             }else {
-                estAverage = (average)*(100-randomPercent)*0.01;
+                estAverage = (average)*(100-randomPercent)*0.01;    //random percentage if random number<20
                 
             }
 
-            double expenseFourYear = estAverage *52*4;
+            double expenseFourYear = estAverage *52*4;     //calculation for forecast of 4years
         
+        //make the average and forecasts rounded to two decimals
              average = Math.round(average * 100);
              average = average/100;
              
