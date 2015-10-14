@@ -31,14 +31,16 @@ public class BarGraph{
       //Input for Monday and loop to error check input
        
          boolean inputValid = false;
+         System.out.print("Enter expenses for Monday: $");
          while(!inputValid){
-            System.out.print("Enter expenses for Monday: $");
+           
             
             if(myScanner.hasNextDouble()||myScanner.hasNextInt()){   //check to see if input is an int or double
             temp = myScanner.nextDouble();	 
              inputValid= true;                                       //if it is then assign an identifier to input
             } else {
 	                System.out.println("Sorry, you did not enter an integer. Please Try again. "); //if not int or double, error message pops up
+	                System.out.print("Enter expenses for Monday: $");
 	                myScanner.nextLine(); 
 	               continue;
             }
@@ -48,7 +50,7 @@ public class BarGraph{
 	            	inputValid = true;
         	}else{
 	            	System.out.println("Please only enter positive digits. Try again. ");   //if not, error message pops up
-	                ;
+	                
         	}
        
         }  
@@ -66,7 +68,7 @@ public class BarGraph{
                  } else {
 	                System.out.println("Sorry, you did not enter an integer. Please Try again. ");//if not int or double, error message pops up
                     myScanner.nextLine();
-                    continue;
+                    
              }
         
         	if(input2>0){
