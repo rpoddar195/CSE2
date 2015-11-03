@@ -21,8 +21,8 @@ public class Shuffling{
         String[] hand = new String[5];
     
         for (int i=0; i<52; i++){
-        cards[i]=rankNames[i%13]+suitNames[i/13];
-        System.out.print(cards[i]+" ");
+        cards[i]=rankNames[i%13]+suitNames[i/13];  // creating the array cards to represent all the cards
+        System.out.print(cards[i]+" ");   // print out the whole deck
         }
 
           shuffle(cards); 
@@ -43,7 +43,7 @@ public class Shuffling{
           System.out.println("Shuffled: ");
           
           for (int i = 0; i < 52; i++) {
-            System.out.print(cards[i] + " ");
+            System.out.print(cards[i] + " ");  // print out the chuffled cards
         }    
             
         }
@@ -52,16 +52,16 @@ public class Shuffling{
           System.out.println("Randomized Hand! ");
           
           for (int i = 0; i < 5; i++) {
-            System.out.print(hand[i] + " ");
+            System.out.print(hand[i] + " ");   // print out the hand of 5 cards
         }    
             
         }
         
         public static void shuffle( String[] cards){
          
-           for(int i = 0; i<52; i++){
+           for(int i = 0; i<52; i++){   
             String firstcard = cards[0];
-            int x = (int) (Math.random()*52);
+            int x = (int) (Math.random()*52); // shuffle the cards with a random number each time
             cards[0] = cards [x];
             cards [x] = firstcard;
       
@@ -69,17 +69,18 @@ public class Shuffling{
         
         }
      
+     
       public static void randomizeHand( String [] cards, String [] hand){
          int[] myArray= new int[5];
          
          
          for(int j =0; j<5; j++){
                int x = (int) (Math.random()*52);
-               myArray[j] = x;
+               myArray[j] = x;   //create a new array with random five numbers
              
              if(j==0){
-                    hand[j] = cards[myArray[j]];
-                }  
+                    hand[j] = cards[myArray[j]];  // if there aren't any repeats in the numbers than use it to refernce an element in cards
+                }                               // then add that element to the array hands
               
              else if(j>0){
                if(x != myArray[j-1]){
